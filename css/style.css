@@ -534,4 +534,24 @@ footer.site_footer .footer_text .custom_col_3 {
     font-size: 14px;
     font-family: 'M PLUS 1p', sans-serif;
 }
+.site_footer .footer_custom_1, 
+.site_footer .footer_custom_2, 
+.site_footer .footer_custom_3, 
+.site_footer .footer_custom_4 {
+    padding: 0 15px;
+    display: flex;
+}
+.site_footer .footer_custom_2 {
+    margin-left: auto;
+    flex: 0 0 250px;
+    max-width: 250px;
+}
+.site_footer .footer_custom_3 {
+    flex: 0 0 250px;
+    max-width: 250px;
+}
+.site_footer .footer_custom_4 {
+    flex: 0 0 514px;
+    max-width: 514px;
+}
 /*footer section css end*/
