@@ -133,7 +133,7 @@ a.btn_with_right_arrow #arrow_right circle {
     stroke: #6A91C1;
 }
 a.btn_with_right_arrow #arrow_icon {
-    fill: #6A91C1;
+    stroke: #6A91C1;
 }
 /*commmon grid css end*/
 
