@@ -250,6 +250,9 @@ input.form_submit:hover {
 	.contact_form_section {
 		padding: 40px 0px;
 	}
+	.contact_form_section .form_container > p {
+		margin: 35px 0px;
+	}
 	.single_input {
 		margin-bottom: 20px;
 	}

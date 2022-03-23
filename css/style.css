@@ -17,6 +17,7 @@ body {
     -moz-font-smoothing: antialiased;
     -font-smoothing: antialiased;
     font-family: 'M PLUS 1p', sans-serif;
+    margin-top: 90px;
 }
 body.no_scroll {
     overflow: hidden;
@@ -402,7 +403,7 @@ a.btn_with_right_arrow #arrow_icon {
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 15px;
+    right: 0px;
     z-index: 9999;
 }
 .navbar_toggler .navbar_toggler_inner,
@@ -414,7 +415,7 @@ a.btn_with_right_arrow #arrow_icon {
     transition-duration: 0.3s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: #ed6d00;
+    background-color: #000000;
     position: absolute;
     left: 0;
     right: 0;
@@ -594,7 +595,6 @@ footer.site_footer .footer_text .custom_col_3 {
 /*banner section css start*/
 .banner_section {
     position: relative;
-    margin-top: 90px;
 }
 .banner_section img {
     width: 100%;
@@ -893,6 +893,9 @@ footer.site_footer .footer_text .custom_col_3 {
     }
 }
 @media(max-width: 900px) {
+    body {
+        margin-top: 70px;
+    }
     nav.custom_navbar {
         position: fixed;
         top: 0;
@@ -919,9 +922,6 @@ footer.site_footer .footer_text .custom_col_3 {
     .site_header nav.custom_navbar ul li {
         margin: 25px 0 !important;
         text-align: center;
-    }
-    .banner_section {
-        margin-top: 79px;
     }
     .banner_section .banner_content h2 {
         font-size: 30px;
