@@ -1,0 +1,47 @@
+.common_title.center_content {
+    text-align: center;
+}
+.common_title p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6A91C1;
+    letter-spacing: 2.6px;
+}
+.common_title.left_content p {
+	padding-left: 100px;
+}
+.common_title.left_content p:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #6A91C1;
+	width: 85px;
+	height: 2px;
+}
+.common_title.center_content p {
+	padding-top: 15px;
+	display: table;
+	margin: auto;
+}
+.common_title.center_content p:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #6A91C1;
+	width: 85px;
+	height: 2px;
+}
+.common_title h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333839;
+    margin-top: 10px;
+}
