@@ -234,6 +234,98 @@ input.form_submit:hover {
 }
 /*contact form section css end*/
 
+/*company info section css start*/
+.company_info_section {
+    padding: 120px 0px;
+}
+.company_info_section .common_title {
+    padding-bottom: 55px;
+}
+.office_building_image img {
+    margin-left: auto;
+}
+table.info_table {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-spacing: 0;
+    border-top: 1px solid #EAEAEA;
+}
+table.info_table th {
+	width: 230px;
+}
+table.info_table th, table.info_table td {
+    padding: 30px 0px;
+    border-bottom: 1px solid #EAEAEA;
+}
+table.info_table th p, table.info_table td p, table.info_table td a {
+    font-size: 16px;
+    color: #303030;
+    font-weight: 400;
+}
+table.info_table td a.external_link {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6A91C1;
+}
+table.info_table td a.external_link span {
+	position: relative;
+}
+table.info_table td a.external_link span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #6A91C1;
+}
+/*company info section css end*/
+
+/*plan info section css start*/
+.plan_info_section {
+    padding: 120px 0px;
+    background-color: #F6F9FD;
+}
+.plan_content p {
+    padding: 55px 0px 60px;
+    font-size: 16px;
+    line-height: 36px;
+    color: #303030;
+}
+/*plan info section css end*/
+
+/*access info section css start*/
+.access_info_section {
+    padding: 120px 0px;
+}
+.access_info_section .common_title {
+    padding-bottom: 55px;
+}
+.map_container iframe {
+    width: 100%;
+    height: 570px;
+}
+.contact_details {
+    padding-top: 70px;
+}
+.contact_details h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 40px;
+}
+.contact_details p,
+.contact_details a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #303030;
+}
+/*access info section css end*/
+
 /*responsive css start*/
 @media (max-width: 1249px) {
 	.inner_page_banner_section h2 {
@@ -242,8 +334,42 @@ input.form_submit:hover {
 	.contact_form_section {
 		padding: 80px 0px;
 	}
+	.company_info_section {
+		padding: 80px 0px;
+	}
+	.plan_info_section {
+		padding: 80px 0px;
+	}
+	.access_info_section {
+		padding: 80px 0px;
+	}
+	.map_container iframe {
+		height: 450px;
+	}
+}
+@media (max-width: 1166px) {
+	.company_info_section .common_title {
+		padding-bottom: 30px;
+	}
+	.office_building_image img {
+		margin: 0px auto 30px;
+	}
+	.access_info_section .common_title {
+		padding-bottom: 30px;
+	}
+	.contact_details {
+		padding-top: 50px;
+	}
 }
 @media (max-width: 900px) {
+	.custom_col_4 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.common_title h3 {
+		font-size: 30px;
+	}
 	.inner_page_banner_section h2 {
 		text-align: center;
 	}
@@ -281,6 +407,35 @@ input.form_submit:hover {
 		margin: 30px auto 0px;
 		height: 50px;
 		max-width: 200px;
+	}
+	.company_info_section {
+		padding: 40px 0px;
+	}
+	table.info_table th {
+		width: 100px;
+	}
+	table.info_table th, table.info_table td {
+		padding: 15px 0px;
+	}
+	.plan_info_section {
+		padding: 40px 0px;
+	}
+	.plan_content p {
+		padding: 30px 0px;
+	}
+	.access_info_section {
+		padding: 40px 0px;
+	}
+	.map_container iframe {
+		height: 320px;
+	}
+	.contact_details {
+		padding-top: 30px;
+		text-align: center;
+	}
+	.contact_details h4 {
+		font-size: 20px;
+		margin-bottom: 20px;
 	}
 }
 /*responsive css end*/
