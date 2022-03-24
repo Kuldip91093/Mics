@@ -1184,12 +1184,6 @@ table.info_table td a.external_link span:before {
         max-width: 50%;
         margin: 30px 0 0;
     }
-    .mission_section.service_page_section .mission_text_sec.mission_content,
-    .news_section,
-    .mission_text_sec.advantage_content,
-    .mission_text_sec.mission_content {
-        padding: 100px 0;
-    }
     .mission_text_sec .mission_text {
         padding-right: 0px;
     }
@@ -1353,7 +1347,7 @@ table.info_table td a.external_link span:before {
     .news_section, 
     .mission_text_sec.advantage_content, 
     .mission_text_sec.mission_content {
-        padding: 50px 0;
+        padding: 40px 0;
     }
     .news_section .news_table_row {
         display: flex;
@@ -1461,6 +1455,9 @@ table.info_table td a.external_link span:before {
     }
     .mission_section.service_page_section .mission_text ul {
         margin-top: 20px;
+    }
+    .inner_page_banner_section h2 {
+        font-size: 30px;
     }
 }
 @media(max-width: 675px) {
