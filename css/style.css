@@ -75,7 +75,7 @@ img{
     letter-spacing: 2.6px;
 }
 .common_title.left_content p {
-    padding-left: 100px;
+    padding-left: 100px !important;
 }
 .common_title.left_content p:before {
     content: "";
@@ -1399,6 +1399,12 @@ table.info_table td a.external_link span:before {
         font-size: 20px;
         margin-bottom: 20px;
     }
+.common_title.left_content p {
+    padding-left: 40px !important;
+}
+.common_title.left_content p:before {
+    width: 28px;
+}
 }
 @media(max-width: 675px) {
     body {
