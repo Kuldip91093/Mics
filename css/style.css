@@ -395,7 +395,7 @@ a.btn_with_right_arrow:hover #circle_border {
     background-color: transparent;
     padding: 25px 15px;
     z-index: 3;
-    transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.6s cubic-bezier(0, 0, 0.2, 1);
 }
 .site_header.site_header_load_before {
     top: -100px;
@@ -439,7 +439,7 @@ a.btn_with_right_arrow:hover #circle_border {
     color: #333839;
     line-height: 22px;
     font-family: 'M PLUS 1p', sans-serif;
-    transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.6s cubic-bezier(0, 0, 0.2, 1);
     color: #fff;
 }
 .site_header.header_fixed nav.custom_navbar ul li a {
@@ -663,7 +663,7 @@ footer.site_footer .footer_text .custom_col_3 {
 }
 .banner_section img {
     transform: scale(1);
-    transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.6s cubic-bezier(0, 0, 0.2, 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -677,7 +677,7 @@ footer.site_footer .footer_text .custom_col_3 {
     opacity: 1;
 }
 .banner_section.banner_animation_before img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: 0;
 }
 .banner_section .banner_content {
@@ -687,11 +687,11 @@ footer.site_footer .footer_text .custom_col_3 {
     bottom: 140px;
     margin: auto;
     display: table;
-    transition: all 0.75s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 1.6s cubic-bezier(0, 0, 0.2, 1);
     opacity: 1;
 }
 .banner_section .banner_content.banner_content_load_before {
-    top: 200px;
+    top: 160px;
     opacity: 0;
 }
 .banner_section .banner_content h2 {
