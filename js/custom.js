@@ -30,14 +30,8 @@ $(window).on('load',function() {
 		// $("#id_selectbox").on("change", function() {
 		// 	$(this).removeClass("holder_col").addClass("active_col");
 		// // });
-		// setTimeout(function (){
-		// 	$(".banner_section").addClass("before_load");
-		// 	$(".banner_content").addClass("banner_content_load");
-		// 	$(".site_header").addClass("site_header_load");
-		// }, 1000);
 	});
 });
-
 $(document).ready(function(){
 	
 	// navbar toggle js
@@ -45,6 +39,14 @@ $(document).ready(function(){
 		$('body').toggleClass('no_scroll');
 		$(this).toggleClass('open_menu');
 		$(this).next("nav").toggleClass('navbar_animate');
+	});
+	$(window).on('load resize scroll', function(){
+		var	windowTop = $(window).scrollTop();
+		if(windowTop > 0) {
+			$("header.site_header").addClass("header_fixed");
+		} else {
+			$("header.site_header").removeClass("header_fixed");
+		}
 	});
 
 	// got to page top js
