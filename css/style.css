@@ -1374,6 +1374,9 @@ table.info_table td a.external_link span:before {
         margin: 25px 0 !important;
         text-align: center;
     }
+    .site_header nav.custom_navbar ul li a {
+        color: #333839;
+    }
     .banner_section .banner_content {
         left: 50px;
     }
@@ -1560,7 +1563,7 @@ table.info_table td a.external_link span:before {
     .banner_section .banner_content {
         left: 20px;
         bottom: auto;
-        top: 10px;
+        top: 45px;
     }
     .news_section .news_heading a.btn_with_right_arrow, 
     .mission_text_sec .mission_text a.btn_with_right_arrow, 
