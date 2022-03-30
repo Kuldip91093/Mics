@@ -17,7 +17,7 @@ body {
     -moz-font-smoothing: antialiased;
     -font-smoothing: antialiased;
     font-family: 'M PLUS 1p', sans-serif;
-    margin-top: 90px;
+    /*margin-top: 90px;*/
 }
 body.no_scroll {
     overflow: hidden;
@@ -389,12 +389,22 @@ a.btn_with_right_arrow:hover #circle_border {
 /*header section css start*/
 .site_header {
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
     right: 0;
-    background-color: #F6F9FD;
+    background-color: transparent;
     padding: 25px 15px;
     z-index: 3;
+    opacity: 0;
+    transition: all 1.6s;
+}
+.site_header.site_header_load {
+    transition-delay: 0.5s;
+    opacity: 1;
+    top: 0;
+}
+.site_header.header_fixed {
+    background-color: #F6F9FD;
 }
 .site_header .custom_container {
     width: 100%;
@@ -432,6 +442,13 @@ a.btn_with_right_arrow:hover #circle_border {
     color: #333839;
     line-height: 22px;
     font-family: 'M PLUS 1p', sans-serif;
+    transition: all 1.6s;
+}
+.site_header.site_header_load nav.custom_navbar ul li a {
+    color: #fff;
+}
+.site_header.header_fixed nav.custom_navbar ul li a {
+    color: #333839;
 }
 .site_header nav.custom_navbar ul li a.nav_btn {
     display: block;
@@ -646,17 +663,39 @@ footer.site_footer .footer_text .custom_col_3 {
 /*banner section css start*/
 .banner_section {
     position: relative;
+    height: 100vh;
 }
 .banner_section img {
-    width: 100%;
+    transform: scale(1.1);
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.banner_section.before_load img {
+    transform: scale(1);
 }
 .banner_section .banner_content {
     position: absolute;
-    top: 0;
+    top: 160px;
     left: 210px;
     bottom: 140px;
     margin: auto;
     display: table;
+    opacity: 0;
+    transition: all 1.6s;
+    transition-delay: 2s;
+}
+.banner_content.banner_content_load {
+    opacity: 1;
+    top: 60px;
 }
 .banner_section .banner_content h2 {
     font-family: 'M PLUS 1p', sans-serif;

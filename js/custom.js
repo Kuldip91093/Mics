@@ -29,7 +29,12 @@ $(window).on('load',function() {
 		$("body").wrapInner("<div style='overflow:hidden;'></div>");
 		// $("#id_selectbox").on("change", function() {
 		// 	$(this).removeClass("holder_col").addClass("active_col");
-		// });
+		// // });
+		// setTimeout(function (){
+		// 	$(".banner_section").addClass("before_load");
+		// 	$(".banner_content").addClass("banner_content_load");
+		// 	$(".site_header").addClass("site_header_load");
+		// }, 1000);
 	});
 });
 

@@ -228,5 +228,22 @@
 	<script src="js/fonts-awesome-5.js"></script>
 	<script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(window).on('load',function() {
+			setTimeout(function (){
+				$(".banner_section").addClass("before_load");
+				$(".banner_content").addClass("banner_content_load");
+				$(".site_header").addClass("site_header_load");
+			}, 400);
+		});
+		$(window).on('load resize scroll', function(){
+			var	windowTop = $(window).scrollTop();
+			if(windowTop > 0) {
+				$("header.site_header").addClass("header_fixed");
+			} else {
+				$("header.site_header").removeClass("header_fixed");
+			}
+		});
+	</script>
 </body>
 </html>
